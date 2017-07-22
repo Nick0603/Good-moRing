@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.goodmoring.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_menu"
+        android:layout_width="match_parent"
+        android:layout_height="310px"
+        android:layout_marginTop="-50px"
+        android:layout_weight="0.02"
+        android:src="@mipmap/titlebar_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/titlebar_1"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <LinearLayout
+        android:layout_width="994px"
+        android:layout_height="275px"
+        android:layout_marginLeft="43px"
+        android:layout_marginTop="50px"
+        android:background="@mipmap/btn_clockpice_nor"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="994px"
+            android:layout_height="275px"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="96dp"
+                android:layout_height="139dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_moto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/icon_moto" />
+
+            <TextView
+                android:id="@+id/TV_alarmTime"
+                android:layout_width="267px"
+                android:layout_height="121px"
+                android:layout_marginLeft="294px"
+                android:layout_marginTop="48px"
+                android:fontFamily="SegoeUI"
+                android:lineSpacingExtra="120px"
+                android:text="13:50"
+                android:textColor="#666666"
+                android:textSize="100px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="83dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="104px"
+                android:layout_marginTop="79px"
+                android:allowUndo="false"
+                android:fontFamily="SegoeUI"
+                android:lineSpacingExtra="74.3px"
+                android:text="14:30"
+                android:textColor="#B3B3B3"
+                android:textSize="61.9px"
+                app:layout_constraintLeft_toRightOf="@+id/TV_alarmTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55px"
+                android:layout_marginLeft="198px"
+                android:layout_marginTop="172px"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_m_off"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_m_on" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_m_on_1"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_w_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_w_on" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_th_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_th_on" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_f_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:src="@mipmap/small_sa_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_sa_off" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_s_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="445dp"
+                android:layout_marginTop="58dp"
+                android:src="@mipmap/checkbox_on"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/checkbox_on"
+                android:layout_marginStart="452dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/iBtn_add"
+        android:layout_width="994px"
+        android:layout_height="275px"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="50px"
+        android:layout_weight="0.00"
+        app:srcCompat="@mipmap/btn_add_nor" />
+
+</LinearLayout>
