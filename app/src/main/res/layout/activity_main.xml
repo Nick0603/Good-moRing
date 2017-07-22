@@ -11,10 +11,9 @@
 
     <ImageView
         android:id="@+id/imageView_menu"
-        android:layout_width="match_parent"
+        android:layout_width="1080px"
         android:layout_height="310px"
-        android:layout_marginTop="-50px"
-        android:layout_weight="0.02"
+        android:layout_marginTop="-100px"
         android:src="@mipmap/titlebar_1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/titlebar_1"
@@ -35,8 +34,8 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="96dp"
-                android:layout_height="139dp"
+                android:layout_width="68dp"
+                android:layout_height="92dp"
                 android:layout_weight="1"
                 android:src="@mipmap/icon_moto"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -45,24 +44,25 @@
 
             <TextView
                 android:id="@+id/TV_alarmTime"
-                android:layout_width="267px"
-                android:layout_height="121px"
-                android:layout_marginLeft="294px"
-                android:layout_marginTop="48px"
+                android:layout_width="89dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="SegoeUI"
                 android:lineSpacingExtra="120px"
                 android:text="13:50"
                 android:textColor="#666666"
                 android:textSize="100px"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="98dp" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="83dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="104px"
-                android:layout_marginTop="79px"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="24dp"
                 android:allowUndo="false"
                 android:fontFamily="SegoeUI"
                 android:lineSpacingExtra="74.3px"
@@ -70,16 +70,28 @@
                 android:textColor="#B3B3B3"
                 android:textSize="61.9px"
                 app:layout_constraintLeft_toRightOf="@+id/TV_alarmTime"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="35dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="55px"
+                android:layout_height="28dp"
                 android:layout_marginLeft="198px"
                 android:layout_marginTop="172px"
                 android:orientation="horizontal"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_s_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -150,30 +162,18 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_sa_off" />
 
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="55px"
-                    android:layout_height="55px"
-                    android:layout_marginLeft="0px"
-                    android:layout_marginRight="38px"
-                    android:layout_weight="1"
-                    android:src="@mipmap/small_s_on"
-                    app:layout_constraintLeft_toRightOf="@+id/imageView12"
-                    app:layout_constraintTop_toTopOf="parent" />
-
             </LinearLayout>
 
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="445dp"
-                android:layout_marginTop="58dp"
+                android:layout_marginLeft="293dp"
+                android:layout_marginTop="30dp"
                 android:src="@mipmap/checkbox_on"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/checkbox_on"
-                android:layout_marginStart="452dp" />
+                app:srcCompat="@mipmap/checkbox_on" />
 
         </android.support.constraint.ConstraintLayout>
 
