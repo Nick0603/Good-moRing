@@ -166,7 +166,7 @@
             </LinearLayout>
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/iBtn_checkAlarm1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="293dp"
@@ -327,15 +327,15 @@
             </LinearLayout>
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/iBtn_checkAlarm2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="293dp"
                 android:layout_marginTop="30dp"
-                android:src="@mipmap/checkbox_on"
+                android:src="@mipmap/checkbox_off"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/checkbox_on" />
+                app:srcCompat="@mipmap/checkbox_off" />
 
         </android.support.constraint.ConstraintLayout>
 
@@ -488,7 +488,7 @@
             </LinearLayout>
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/iBtn_checkAlarm3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="293dp"
