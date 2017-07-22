@@ -47,31 +47,31 @@
                 android:layout_width="89dp"
                 android:layout_height="61dp"
                 android:layout_marginLeft="98dp"
+                android:layout_marginStart="98dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="SegoeUI"
                 android:lineSpacingExtra="120px"
-                android:text="13:50"
+                android:text="07:30"
                 android:textColor="#666666"
                 android:textSize="100px"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="98dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="83dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="35dp"
-                android:layout_marginTop="24dp"
+                android:layout_width="166px"
+                android:layout_height="89px"
+                android:layout_marginLeft="104px"
+                android:layout_marginStart="104px"
+                android:layout_marginTop="79px"
                 android:allowUndo="false"
                 android:fontFamily="SegoeUI"
                 android:lineSpacingExtra="74.3px"
-                android:text="14:30"
+                android:text="09:00"
                 android:textColor="#B3B3B3"
                 android:textSize="61.9px"
                 app:layout_constraintLeft_toRightOf="@+id/TV_alarmTime"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="35dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -89,9 +89,10 @@
                     android:layout_marginLeft="0px"
                     android:layout_marginRight="38px"
                     android:layout_weight="1"
-                    android:src="@mipmap/small_s_on"
+                    android:src="@mipmap/small_s_off"
                     app:layout_constraintLeft_toRightOf="@+id/imageView12"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_s_off" />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -161,6 +162,328 @@
                     app:layout_constraintLeft_toRightOf="@+id/imageView7"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_sa_off" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="293dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/checkbox_on"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/checkbox_on" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="994px"
+        android:layout_height="275px"
+        android:layout_marginLeft="43px"
+        android:layout_marginTop="50px"
+        android:background="@mipmap/btn_clockpice_nor"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="994px"
+            android:layout_height="275px"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="68dp"
+                android:layout_height="92dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_metro"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/icon_metro" />
+
+            <TextView
+                android:id="@+id/TV_alarmTime"
+                android:layout_width="89dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="SegoeUI"
+                android:lineSpacingExtra="120px"
+                android:text="07:15"
+                android:textColor="#666666"
+                android:textSize="100px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="166px"
+                android:layout_height="89px"
+                android:layout_marginLeft="104px"
+                android:layout_marginStart="104px"
+                android:layout_marginTop="79px"
+                android:allowUndo="false"
+                android:fontFamily="SegoeUI"
+                android:lineSpacingExtra="74.3px"
+                android:text="09:00"
+                android:textColor="#B3B3B3"
+                android:textSize="61.9px"
+                app:layout_constraintLeft_toRightOf="@+id/TV_alarmTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginLeft="198px"
+                android:layout_marginTop="172px"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_s_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_s_on" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_m_off"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_t_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_w_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_w_off" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_th_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_th_off" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_f_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_f_off" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:src="@mipmap/small_sa_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_sa_off" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="293dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/checkbox_on"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/checkbox_on" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="994px"
+        android:layout_height="275px"
+        android:layout_marginLeft="43px"
+        android:layout_marginTop="50px"
+        android:background="@mipmap/btn_clockpice_nor"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="994px"
+            android:layout_height="275px"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="68dp"
+                android:layout_height="92dp"
+                android:layout_weight="1"
+                android:src="@mipmap/icon_car"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/icon_car" />
+
+            <TextView
+                android:id="@+id/TV_alarmTime"
+                android:layout_width="89dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="SegoeUI"
+                android:lineSpacingExtra="120px"
+                android:text="07:35"
+                android:textColor="#666666"
+                android:textSize="100px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="166px"
+                android:layout_height="89px"
+                android:layout_marginLeft="104px"
+                android:layout_marginStart="104px"
+                android:layout_marginTop="79px"
+                android:allowUndo="false"
+                android:fontFamily="SegoeUI"
+                android:lineSpacingExtra="74.3px"
+                android:text="09:00"
+                android:textColor="#B3B3B3"
+                android:textSize="61.9px"
+                app:layout_constraintLeft_toRightOf="@+id/TV_alarmTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginLeft="198px"
+                android:layout_marginTop="172px"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_s_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_s_off" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_m_off"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_t_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_w_off"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_w_off" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_th_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_th_off" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:src="@mipmap/small_f_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_f_off" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="38px"
+                    android:src="@mipmap/small_sa_on"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_sa_on" />
 
             </LinearLayout>
 
