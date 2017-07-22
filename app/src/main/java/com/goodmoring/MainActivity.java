@@ -2,13 +2,18 @@ package com.goodmoring;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     public Boolean booleanCheckBox[] = {true,false,true};
+
+    ImageView iVSetting;
+
     ImageButton iBtnAdd,iBtnCheckAlarm1,iBtnCheckAlarm2,iBtnCheckAlarm3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         iBtnCheckAlarm2 =  (ImageButton)findViewById(R.id.iBtn_checkAlarm2);
         iBtnCheckAlarm3 =  (ImageButton)findViewById(R.id.iBtn_checkAlarm3);
 
-        iBtnAdd.setOnClickListener(new View.OnClickListener() {
+        iVSetting = (ImageView) findViewById(R.id.IV_setting);
+
+        iVSetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 showDialog();
@@ -64,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
                     iBtnCheckAlarm3.setImageResource(R.mipmap.checkbox_on);
                     booleanCheckBox[2] = true;
                 }
+            }
+        });
+
+        iVSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,SettingActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -33,7 +33,6 @@
             android:layout_marginTop="14dp"
             android:elegantTextHeight="false"
             android:fontFamily="SegoeUI"
-            android:lineSpacingExtra="6.5"
             android:lineSpacingMultiplier="2.5"
             android:singleLine="false"
             android:text="09    00"
@@ -55,14 +54,13 @@
 
         <EditText
             android:id="@+id/ET_destionation"
-            android:layout_width="131dp"
-            android:layout_height="24dp"
+            android:layout_width="394px"
+            android:layout_height="72px"
             android:layout_marginLeft="172dp"
             android:layout_marginStart="172dp"
             android:layout_marginTop="39dp"
             android:ems="10"
             android:fontFamily="MicrosoftJhengHeiBold"
-            android:letterSpacing="0.1em"
             android:text="台北車站"
             android:textColor="#333333"
             android:textSize="48px"
@@ -171,7 +169,6 @@
             android:layout_marginStart="91dp"
             android:elegantTextHeight="false"
             android:fontFamily="SegoeUI"
-            android:lineSpacingExtra="6.5"
             android:lineSpacingMultiplier="2.5"
             android:singleLine="false"
             android:text="00    30"
@@ -253,7 +250,7 @@
             app:srcCompat="@mipmap/btn_cancel_nor" />
 
         <ImageButton
-            android:id="@+id/iBtn_finish"
+            android:id="@+id/imageButton13"
             android:layout_width="540px"
             android:layout_height="183px"
             android:layout_weight="1"

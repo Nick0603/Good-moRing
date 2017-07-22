@@ -33,7 +33,7 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/IV_setting"
                 android:layout_width="68dp"
                 android:layout_height="92dp"
                 android:layout_weight="1"
