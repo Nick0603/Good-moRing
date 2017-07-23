@@ -6,23 +6,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 /**
  * Created by Nick on 2017/7/23.
  */
 
 public class SettingActivity extends Activity {
-    ImageButton iBtnCheckRoute;
+    ImageButton iBtnCheckRoute,iBtnFinish,iBtnCancel;
     EditText ETDestination;
+    TextView TVArrivalTime;
     long arrivalTime;
-
+    long durationTransit,durationMotor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
+        TVArrivalTime = (TextView)findViewById(R.id.TV_arrivalTime);
         ETDestination = (EditText)findViewById(R.id.ET_destionation);
         iBtnCheckRoute = (ImageButton)findViewById(R.id.iBtn_checkRoute);
+        iBtnFinish = (ImageButton)findViewById(R.id.iBtn_finish);
+        iBtnCancel = (ImageButton)findViewById(R.id.iBtn_cancel);
+
         iBtnCheckRoute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +45,32 @@ public class SettingActivity extends Activity {
                 intent.putExtras(bundle);
                 //切換Activity
                 startActivity(intent);
+            }
+        });
+
+        TVArrivalTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        iBtnFinish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String destination = ETDestination.getText().toString();
+                long time=System.currentTimeMillis();
+
+                MainActivity.destination = destination;
+                MainActivity.arriveTime = time;
+                finish();
+            }
+        });
+
+        iBtnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

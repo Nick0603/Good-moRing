@@ -32,8 +32,8 @@
             android:label="@string/app_name">
         </activity>
 
-        <activity
-            android:name=".addDialogFragment"></activity>
+        <fragment
+            android:name=".addDialogFragment"></fragment>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

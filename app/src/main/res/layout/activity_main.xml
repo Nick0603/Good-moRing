@@ -58,7 +58,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/TV_arrivalTime"
                 android:layout_width="166px"
                 android:layout_height="89px"
                 android:layout_marginLeft="104px"
@@ -101,7 +101,7 @@
                     android:layout_marginLeft="0px"
                     android:layout_marginRight="38px"
                     android:layout_weight="1"
-                    android:src="@mipmap/small_m_off"
+                    android:src="@mipmap/small_m_on"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_m_on" />
@@ -115,7 +115,8 @@
                     android:layout_weight="1"
                     android:src="@mipmap/small_m_on_1"
                     app:layout_constraintLeft_toRightOf="@+id/imageView5"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_m_on_1" />
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -124,7 +125,7 @@
                     android:layout_marginLeft="0px"
                     android:layout_marginRight="38px"
                     android:layout_weight="1"
-                    android:src="@mipmap/small_w_off"
+                    android:src="@mipmap/small_w_on"
                     app:layout_constraintLeft_toRightOf="@+id/imageView4"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_w_on" />
@@ -150,7 +151,8 @@
                     android:layout_weight="1"
                     android:src="@mipmap/small_f_on"
                     app:layout_constraintLeft_toRightOf="@+id/imageView8"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/small_f_on" />
 
                 <ImageView
                     android:id="@+id/imageView12"
@@ -194,7 +196,7 @@
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/IV_translit"
                 android:layout_width="68dp"
                 android:layout_height="92dp"
                 android:layout_weight="1"
@@ -296,7 +298,7 @@
                     android:layout_marginLeft="0px"
                     android:layout_marginRight="38px"
                     android:layout_weight="1"
-                    android:src="@mipmap/small_th_on"
+                    android:src="@mipmap/small_th_off"
                     app:layout_constraintLeft_toRightOf="@+id/imageView9"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_th_off" />
@@ -457,7 +459,7 @@
                     android:layout_marginLeft="0px"
                     android:layout_marginRight="38px"
                     android:layout_weight="1"
-                    android:src="@mipmap/small_th_on"
+                    android:src="@mipmap/small_th_off"
                     app:layout_constraintLeft_toRightOf="@+id/imageView9"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_th_off" />
@@ -469,7 +471,7 @@
                     android:layout_marginLeft="0px"
                     android:layout_marginRight="38px"
                     android:layout_weight="1"
-                    android:src="@mipmap/small_f_on"
+                    android:src="@mipmap/small_f_off"
                     app:layout_constraintLeft_toRightOf="@+id/imageView8"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@mipmap/small_f_off" />

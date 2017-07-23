@@ -23,7 +23,7 @@
         android:background="@mipmap/btn_arrive_nor">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/TV_arrivalTime"
             android:layout_width="182dp"
             android:layout_height="52dp"
             android:layout_marginEnd="8dp"
@@ -54,9 +54,9 @@
 
         <EditText
             android:id="@+id/ET_destionation"
-            android:layout_width="394px"
-            android:layout_height="110px"
-            android:layout_marginLeft="170dp"
+            android:layout_width="131dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="172dp"
             android:layout_marginStart="172dp"
             android:layout_marginTop="40dp"
             android:ems="10"
@@ -92,8 +92,8 @@
         <LinearLayout
             android:layout_width="344dp"
             android:layout_height="32dp"
-            android:layout_marginLeft="43px"
-            android:layout_marginStart="43px"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
             android:layout_marginTop="33dp"
             android:orientation="horizontal"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -208,7 +208,7 @@
             android:layout_height="64dp"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp"></LinearLayout>
+            tools:layout_editor_absoluteY="33dp"></LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
 
@@ -223,7 +223,7 @@
             android:layout_width="530px"
             android:layout_height="240px"
             android:layout_marginTop="20px"
-            android:background="@mipmap/btn_condition_nor"
+            android:background="@mipmap/btn_weather_nor"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp">
 
@@ -232,6 +232,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="23dp"
+                android:src="@mipmap/checkbox_on"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@mipmap/checkbox_on"
                 tools:layout_editor_absoluteX="2dp" />
@@ -273,7 +274,7 @@
             app:srcCompat="@mipmap/btn_cancel_nor" />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/iBtn_finish"
             android:layout_width="540px"
             android:layout_height="183px"
             android:layout_weight="1"
