@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     static public long arriveTime = (new Date(2017, 7, 30, 8, 0, 0)).getTime();
+    static public String arriveTimeText = "09:00";
     static public String destination = "台北火車站";
     TextView TVArrivalTime;
     ImageView iVSetting, IVTranslit;
@@ -55,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         new HttpAsyncTask().execute(String.format("https://maps.googleapis.com/maps/api/distancematrix/json?origins=%s&destinations=%s&mode=transit&key=AIzaSyC1DewjeBNznTqfRz_xU6HWGy984yNWkZ8&arrival_time=%d", "花博圓山精豔館", destination, time));
         // motorDuration    新增 avoid=highways
         new HttpAsyncTask().execute(String.format("https://maps.googleapis.com/maps/api/distancematrix/json?origins=%s&destinations=%s&avoid=highways&key=AIzaSyC1DewjeBNznTqfRz_xU6HWGy984yNWkZ8&arrival_time=%d", "花博圓山精豔館", destination, time));
-
 
     }
 
